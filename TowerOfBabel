@@ -1,0 +1,109 @@
+COLD FUSION CHALLENGE: THE TOWER OF BABEL
+
+BY: Dr. Janelle C. Simmons
+
+
+Basically, my solution is to code within Cold Fusion in order to build an app. This app would focus on the actual story of the Tower of Babel. This is not an extensive code as I was unable to use Cold Fusion at all although I attempted to do so many times. 
+
+This is the only file I was able to open from the download:
+
+#!/bin/sh
+
+# For EAR/WAR JEE deployments, you will need to modify it to point J2EEJAR to the appropriate JAR file paths as per your application server.
+
+# this should point to the directory with ColdFusions lib directory.
+# if this is blank, this is probably a J2EE deployment and this should point
+# to the /WEB-INF/cfusion directory
+CFUSION_HOME=$(cd "$(dirname "$0")"; pwd)/..
+
+# This needs to point at the JAR file with the J2EE class files in it.
+# It defaults to a value that is valid for the server install, but for
+# a J2EE install you will need to modify it to point to the appropriate JAR file.
+J2EEJAR=$CFUSION_HOME/runtime/lib/servlet-api.jar:$CFUSION_HOME/runtime/lib/jsp-api.jar:$CFUSION_HOME/runtime/lib/el-api.jar
+
+#Following is the example for JBoss library path. Change it and uncomment it as per your Application server's JAR paths. 
+#J2EEJAR=/opt/jboss-as-7.1.1.Final/modules/javax/servlet/api/main/jboss-servlet-api_3.0_spec-1.0.0.Final.jar:/opt/jboss-as-7.1.1.Final/modules/javax/servlet/jsp/api/main/jboss-jsp-api_2.2_spec-1.0.0.Final.jar:/opt/jboss-as-7.1.1.Final/modules/javax/el/api/main/jboss-el-api_2.2_spec-1.0.0.Final.jar
+
+# This needs to point to the WEB-INF directory for ColdFusion.
+if [ -d "$CFUSION_HOME/wwwroot/WEB-INF" ]; then
+  WEBINF=$CFUSION_HOME/wwwroot/WEB-INF
+else
+  WEBINF=$CFUSION_HOME/..
+fi
+
+
+. $CFUSION_HOME/bin/findjava.sh
+
+
+/bin/sh -c "${_JAVACMD} -Dcoldfusion.classPath=$CFUSION_HOME/lib/updates:$CFUSION_HOME/lib:$CFUSION_HOME/lib/axis2 -Dcoldfusion.libPath=$CFUSION_HOME/lib -cp $CFUSION_HOME/lib/updates/*:$CFUSION_HOME/lib/*:$WEBINF/lib/*:$J2EEJAR coldfusion.tools.CLIInvoker CLI $*"
+________________________________________________________________
+
+My beginning code is below! 
+
+My algorithm basically gives open and close commands based on the beginner server code given. I added the password, and other links. 
+
+This is called the Tower of Babel.
+
+
+<servers>
+   <server>J2EEJAR></Jar>
+      <name>cfusion</name>
+      <directory>CF_ROOT</directory>
+	 <directory>CFUSION_HOME=$</dirname “$0)>
+	 <Password>CF Password = Admin5!</Password>
+
+<J2EEJAR=$CFUSION_HOME/runtime/lib/servlet-api.jar:$CFUSION_HOME/runtime/lib/jsp-api.jar:$CFUSION_HOME/runtime/lib/el-api.jar
+
+   </server>
+</servers>
+
+
+
+<html> 
+
+<head>
+<title> The Tower of Babel </title>
+<subtitle> By: Dr. Janelle C. Simmons </subtitle>
+</head>
+
+
+<body> (background: #195dff;
+text-align: center;
+
+#main {
+
+width: 800pm;
+height: 550;
+background: #ff5519
+
+
+(link hreffJ2EE” type: text/css”) recode
+
+		<p> Hello God! How can I build for you? </p>
+
+<p> …paragraph
+	
+
+</body>
+
+
+</html>
+
+
+
+In order to solve this solution, I recommend that the linked website to Cold Fusion. 
+
+JAR file paths can be pointed to via code and controlling for the actual JAVA environment (See above).
+
+Modify the J2EE class files at a value of 8500.
+
+Modify JBoss files and uncomment by removing the tabulations. 
+Link: <JBoss> </JBoss>
+
+Point to Cold Fusion: By using an if then algorithm, 
+
+If <-dCF> then <CF> = $CF </$CF>
+
+As for the other files, I only found pictures and repeat commands of the modified data above. 
+
+I can honestly say, this was a challenge!
